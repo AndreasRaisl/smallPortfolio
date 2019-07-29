@@ -81,7 +81,7 @@ session_start();
     	$mail = $_POST['email'];
 			$password = $_POST['password'];
 			$passwordEnc = sha1($password);
-			$allUsers = file('../TextFiles/users.txt');
+			$allUsers = file('Data/users.txt');
 			//var_dump($allUsers);
 
 			foreach($allUsers AS $user)
