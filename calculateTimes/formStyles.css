@@ -1,0 +1,232 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body  {
+  background-color: #EAEDF0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Aref Ruqaa', serif;
+  color: #00539F;
+  text-shadow:1.3px 1.3px 1.3px black;
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+.menu-container {
+  background-color: #5995DA;  /* Blue */
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;  
+}
+.menu { 
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.signupandlogin {
+  display: flex;
+}
+.login {  
+  margin-left: 20px;  
+}
+
+.header-container {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+  margin: 40px 0 50px 0;  
+  background-color: #D6E9FE;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  color: rgb(9, 50, 97);
+}
+.pagetitle {
+  font-size: 40px;
+}
+
+
+.registration-container {
+  display: flex;
+  justify-content: center;  
+}
+.register {
+  background: rgb(245, 182, 67);
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 90%;
+  padding: 35px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.register h2 {
+  text-align: center;
+}
+
+.register p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+  padding-right: 20px;
+  
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row input[type='password'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 50px;
+  padding: 7px;
+  font-size: 14px;
+  
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;  
+}
+.form-row select {
+  padding: 5px;  
+}
+.form-row .checkbox-label {
+  margin-bottom: 0;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #5995DA;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
+}
+
+
+
+
+
+
+
+/*  rules for screens wider than 900px */
+
+@media only screen and (min-width: 900px) {
+  .header,
+  .register {
+    width: 700px; 
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+  }  
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row input[type='password'] {
+    width: 50px;  
+    height: initial;  
+  }
+
+  .form-row label {
+    text-align: right;
+    width: 200px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .instructions {
+   float: right;
+   text-align: left;
+   width: 150px;
+   padding-left: 20px;
+  }
+
+  #SafetyInfo {
+    float: right;
+    text-align: left;
+    width: 150px;
+    padding-left: 20px;
+  }
+
+  .form-row button {
+    margin-top: 20px;
+  }
+
+  .legacy-form-row legend {
+    float: left;
+    width: 200px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .legacy-form-row {
+    margin-bottom: 10px;
+  }
+
+  .form-row .checkbox-label {
+    margin-left: 200px;
+    width: auto;
+  }
+
+} /* end of rules for screens narrower than 900px

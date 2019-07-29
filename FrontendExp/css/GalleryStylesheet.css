@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#gallery {
+	position: relative;
+	
+}
+
+#gallery figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#gallery figure:last-of-type {
+  position: relative;
+}
+
+#gallery figcaption {
+  position: absolute;
+  left: 1em;
+  bottom: 0.5em;
+  z-index: 2;
+}
