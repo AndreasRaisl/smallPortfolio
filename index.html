@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Andreas Raisl - Startseite </title>	
+	<link rel="stylesheet" href="css/indexStylesheet.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"> 
+</head>
+
+<body id="myBody">
+	
+	<div id="header" class="header_start">	  	
+		<img class = "logo_start" id="logo" src="img/Logo_neu.png" width="130px" height="45px">
+		
+	  <!-- <div class="ButtonGroup">
+
+			<div class="iconCircle">	
+	    <a class="ButtonCall" href="nowhere.html">
+				<i class="fa fa-phone fa-fw" style="font-size:0.5em;"></i>
+			</a>
+			</div>
+
+			<div class="iconCircle">	
+	    <a class="ButtonHome" href="index.html">
+		  <i class="fa fa-home fa-fw"></i>
+			</a>
+			</div>
+	    <a class="ButtonPlay" href="nowhere.html">
+		  <img src="images/whh_icn_videos.svg" width=50px height=50px>
+	    </a>	
+		</div>-->
+
+		<div class="ButtonGroup">	 
+			<ul>
+				<li>					
+					<span class="fa-stack fa-lg phoneButton"  id="phoneButton" onclick="showPhoneNumber()">
+						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
+						<i class="fas fa-phone fa-stack-1x" style="color: #550355"></i>
+					</span>					
+				</li>
+				<li>
+					<a href="index.html">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
+							<i class="fas fa-home fa-stack-1x" style="color: #550355"></i>
+						</span>
+					</a>
+				</li>	
+				<li>					
+					<span class="fa-stack fa-lg emailButton" id="emailFormButton" onclick="showEmailForm()">
+						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
+						<i class="fas fa-at fa-stack-1x" style="color: #550355"></i>
+					</span>					
+				</li>
+				<li>
+					<a href="https://github.com/AndreasRaisl/smallPortfolio" target="_blank">					
+						<span class="fa-stack fa-lg" id="emailFormButton" onclick="sayHello()">
+							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
+							<i class="fab fa-github fa-stack-1x" style="color: #550355"></i>
+						</span>
+					</a>					
+				</li>						
+			</ul>
+		</div>
+		
+		
+		<div class="phoneNumberArea" id="phoneNumberArea">
+			<div id="phoneNumberAreaCloseButton" class="phoneNumberAreaCloseButton" onclick="closePhoneNumber()">
+				<div> </div>
+				<div> </div>
+			</div>
+			<div id="innerPhoneNumberArea">
+				<p class="firstLinePhoneInfo">Sie erreichen mich telefonisch</p>
+				<p> Mobil: +49(0)151-50904441 </p>
+				<p> Festnetz: +49(0)228-36027685 </p>
+			</div>
+		</div>			
+			
+
+		<div class="emailFormArea" id="emailFormArea">
+			<div id="emailFormAreaCloseButton" class="emailFormAreaCloseButton" onclick="closeEmailForm()">
+				<div> </div>
+				<div> </div>
+			</div>
+			<div id="innerEmailFormArea">
+				<p class="firstLineEmailInfo"> Schreiben Sie mir per Email </p>
+				<p> Andreas.Raisl@gmx.de </p>
+				<p> Andreasraisl@googlemail.com </p>
+			</div>
+		</div>
+	
+	
+
+	  <div class="MenuButton" onclick="openMenu()">
+		<div id="MenuButtonLine1" class="MenuButtonLine MenuButtonLine1"> </div>
+	    <div id="MenuButtonLine2" class="MenuButtonLine MenuButtonLine2"> </div>
+	    <div id="MenuButtonLine3" class="MenuButtonLine MenuButtonLine3"> </div>	
+	  </div>	
+	</div>
+	
+		
+	<div id="MenuArea" class="MenuArea">
+	  <div id="MenuCloseButton" class="MenuCloseButton" onclick="closeMenu()">
+			<div> </div>
+			<div> </div>
+	  </div>	
+	  <div id="MenuOpen" class="MenuOpen_start">	
+      <div class="MenuText">
+				 <p class="MenuItem MenuItemFirst">  <a href="index.html"> Startseite </a> </p> 
+				
+				<p class="MenuItem"> <a href="#"> Mein CV </a> </p>
+				<p class="MenuItem"> <a href="#"> über Reisen nach Moldawien </a> </p>
+				<p class="MenuItem"> <a href="#"> Musikvideos </a> </p>
+				<p class="MenuItem"> <a href="#"> weitere Projekte </a> </p>
+				<p class="MenuItem"> <a href="#"> Programme zur Investmentberechnung </a> </p>
+				<p class="MenuItem MenuItemLast"> <a href="#"> Kontakt </a> </p>		
+	    </div>	
+	  </div>
+	</div>
+	
+	
+	
+	<div id="content1" class="background1">		
+	    <div class="intro">
+		  <div class="textInIntro">  
+	        <h2> Andreas Raisl – <br/> angehender Webentwickler </h2>
+		    <br>
+	        <p>Kommend aus der Softwareentwicklung für Embedded Systems, habe ich nun den Weg in Richtung Webentwicklung eingeschlagen, 
+						denn dies liegt mir und gefällt mir. Sehr intensiv habe ich mich im Selbststudium mit all den grundlegenden Technologien 
+						beschäftigt und habe inzwischen durchaus ein sehr gutes Verständnis der Grundlagen, das ich ständig ausbaue. Mit diesem
+						 Online-Auftritt möchte ich jedem den es interessiert einen ehrlichen Eindruck darüber geben wo ich gerade stehe, 
+						 was ich schon gut kann und was an Lernen und Üben noch vor mir liegt. Denn ich liebe es Neues zu lernen.  </p>
+		    <br>
+			<p class="buttonReferences"> <a href="../aboutMe/moreAboutMe.html">  Mehr über mich </a> </p>	     	    
+	      </div>	
+	    </div>	  		
+	    <div class = "SliderGroup">
+	      <div id="sliderElement1" class="SliderBar1">
+	      </div>	
+	      <div id="sliderElement2" class="SliderBar2">
+		  </div>	
+	      <div id="sliderElement3" class="SliderBar3">		  
+	      </div>
+	    </div>		  
+	  </div>	
+	
+	  <div class="textOnPage2">
+	    <h2 class="headingMySkills"> 
+		  Meine Skills -  <br>
+		  mehr ist in Arbeit		
+	    </h2>			
+			
+			<div class="mySkills" style="text-align: left; float: left;">
+				<div class="skill">
+			
+					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+					<span style="background: rgb(55, 154, 214);"> CSS3 </span>
+					<span  style="background: rgb(206, 161, 26);">  JavaScript   </span>
+					 <span  style="background: purple;"> PHP </span>
+					 <span  style="background: green">Python </span> 
+				 <span  style="background: orange"> Responsive Design </span>
+					 <span  style="background: rgb(95, 63, 136);"> Bootstrap  </span> <br>
+					 <span style="background: rgb(118, 172, 100);"> Node.js </span>
+					 <span style="background: pink"> Version Control (GIT) </span>
+
+				</div>				
+			</div>
+
+			<div class="passbild" style="text-align: right;  float: right; border-radius: 50%;">
+				<img style="border-radius: 50%;" src="img/myPictureCutted.jpg" alt="mein Passbild" width="200px" height="200px">
+
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		<h1 id="headingProjects"> Meine Projekte </h1>
+		
+	  <!-- <div class="VideoGallery VideoGallerySixElements">
+			<div class="notOuterRightImage" style="background: rgb(209, 209, 103)" width="288px" height="216px"> </div>
+			<img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px">
+			<img src="images/teaser_video.jpg" width="288px" height="216px">
+			<img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
+			<img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
+			<img class="secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
+		</div>	 -->
+		
+		<div class="ProjectGallery ProjectGallerySixElements">
+			<div class="notOuterRightImage projectName">
+					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+					<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
+					<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
+					 <span  style="background: purple; top: 75px;"> PHP </span>
+					 <span  style="background: orange; top: 100px;"> Responsive Design </span>
+					  
+					 Login-Formular 
+			</div>
+			<div class="notOuterRightImage projectName"> Informationsseite zum Thema Eisenbahn </div>
+			<div class="projectName"> Wochentag der Geburt berechnen </div>
+			<div class="notOuterRightImage secondRow projectName"> Projekt 4 </div>
+			<div class="notOuterRightImage secondRow projectName"> Projekt 5 </div>
+			<div class="secondRow projectName"> Projekt 6 </div>
+		</div>		
+		
+	  <div class="ClientReferenceTextArea">
+		<div class="ClientReferenceText">
+			<h2> Dinge im Internet schaffen - <br>
+				   Was mir an der Webentwicklung so gefällt  </h2>
+		  <br>			  
+		  <p>Es ist die Möglichkeit etwas zu erschaffen. Und wenn alles richtig ist - dann funktioniert es sogar. 
+				 Die heutigen Techniken der Webentwicklung sind hochprofessionell und wohl für niemanden mehr 
+				 vollständig zu überschauen. Und dennoch ist es auch schon mit elemantaren Kenntnissen möglich 
+				 Dinge zum Laufen zu bringen.  Sich durchzufragen, recherchieren, ja, manchmal auch Code zu kopieren. 
+				 Oder zu experimentieren, um herauszufinden wie etwas genau funktioniert. 
+				Es geht dann erst mal langsamer als beim hocherfahrenen Profi, sieht nicht immer ganz blankpoliert aus.
+				Diesen Anspruch habe ich mit dieser Seite auch gar nicht. Den Ehrgeiz alles perfekt zu machen hebe ich 
+				mir lieber für den Job auf. Wenn es wirklich gefragt ist und einen Nutzen hat. 
+				So ist etwa leider diese Startseite hier noch nicht responsive, einige Unterseiten dagegen schon, da ich mich vor kurzem 
+				erst mit diesem Thema beschäftigt habe. 
+				Aber es ist auf jeder Stufe möglich etwas zu erschaffen. Ein guter Laptop reicht, all die Informationen sind 
+				online verfügbar, oft erstklassig aufbereitet und erklärt. Es gibt unendlich viel zu lernen. 
+				Und zu experimentieren. Es hört nie auf. 
+				Und die Möglichkeiten sind frei und jederzeit verfügbar.Zeit, ja Zeit ist das einzige was der Sache
+				Grenzen setzt.   Deshalb gefällt mir Webentwicklung so gut.   
+		  </p>			  
+	    </div>
+	  </div>
+	
+	  <div class="lastText">
+	    <h2> Arbeit , mein Ziel  </h2> <br>
+	    <p> Selbst lernen und experimentieren ist ja schön, aber nun bin ich an einem Punkt an dem jetzt die Praxis
+				 der passende weitere Lehrer ist. Learning By Doing! Ich lebe in Bonn und möchte in den nächsten 2 Monaten beruflich in die Webentwicklung einsteigen. 
+					Am liebsten hier im Raum Bonn / Köln. Oder aber mit konkreter Remote-Perspektive. Für einige Monate Einarbeitung komme ich 
+					gern auch ganz woanders hin. Sprechen wir einfach darüber!			  
+			</p>
+			<br>
+			<br>			
+			<p>
+				Zum Abschluss dieser Startseite hier noch einige persönliche Bilder von mir und dem was ich so mache. 
+				Und zur Abwechslung haben diese mal mit dem Programmieren gar nichts zu tun. 
+			</p>
+	  </div>	
+	
+	<div class="ProjectGallery ProjectGallerySixElements">
+		<img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px"><img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px"><img src="images/teaser_video.jpg" width="288px" height="216px">
+		<img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px"><img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px"><img class="secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
+	</div>
+	
+	<div class="footer">
+	<div class="footerContent">	
+		<p class="address">© Andreas Raisl · Burghofstrasse 31 · 53229 Bonn</p>
+		<p class="impressum"><a href="nowhere.html"> Impressum </a> | <a href="nowhere.html"> Datenschutz </a></p>	
+	</div>
+	</div>
+	
+	
+	
+<script src="JS/BackgroundSlideshow.js"></script>	
+<script src="JS/HeaderChangeOnScroll.js"></script>
+<script type="text/javascript"> window.addEventListener("scroll", changeHeader); </script>
+	
+</body>
+</html>
