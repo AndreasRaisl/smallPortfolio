@@ -80,6 +80,7 @@ h2 {
 	position: absolute;
 	top: 140px;
 	right: 80px;
+	
 }
 
 .MenuItem {
@@ -94,12 +95,14 @@ h2 {
 	text-align: center;
 	font-size: 24px;
 	color: rgb(128, 128, 128);
+	
 }
 
 .MenuItemFirst {
 	padding-top: 0px;
 	border-top: 0 none;
 	color: #550355;
+	text-decoration: none;
 }
 
 .MenuItemLast {
@@ -172,9 +175,8 @@ h2 {
 
 .ButtonGroup {
 	/*position: absolute;*/
-	width: 170px;
-	height: 50px;
-	
+	width: 250px;
+	height: 50px;	
 	left: 0px;
 	right: 0px;
 	margin-left: auto;
@@ -188,6 +190,10 @@ h2 {
 
 .ButtonGroup ul li {
 	display: inline;
+}
+
+.phoneButton, .emailButton {
+	cursor: pointer;
 }
 
 .phoneNumberArea {
@@ -239,6 +245,59 @@ h2 {
   transform: rotate(45deg);
 }
 .phoneNumberAreaCloseButton:after {
+  transform: rotate(-45deg);
+}
+
+
+.emailFormArea {
+	height: 30vh;
+	width: 600px;
+	position: fixed;	
+	top: 0px;
+	left: 50%;
+	margin-left: -300px;
+	background-color: rgb(209, 209, 103);
+	display: none;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: blue;
+	padding-top: 30px;
+	line-height: 40px;
+}
+
+.firstLineEmailInfo {
+	border-bottom: 1px solid rgb(179, 179, 179);
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+
+.emailFormAreaCloseButton {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	opacity: 0.3;
+}
+
+.emailFormAreaCloseButton:hover {
+	opacity: 1;
+}
+
+.emailFormAreaCloseButton:before, .emailFormAreaCloseButton:after {
+  position: absolute;
+  left: 18px;
+  content: ' ';
+  height: 41px;
+  width: 2px;
+  background-color: black;;
+}
+.emailFormAreaCloseButton:before {
+  transform: rotate(45deg);
+}
+.emailFormAreaCloseButton:after {
   transform: rotate(-45deg);
 }
 
@@ -429,33 +488,65 @@ h2 {
 	background: #550355;
 	color: white;
 	padding: 20px;
-
+	margin: 0 auto;
+	margin-bottom: 40px;
+	width: 900px;
 }
 
-.VideoGallery {
+.mySkills {
+	text-align: left;
+	color: white;
+	font-size: 17px;
+	padding: 20px 0;
+}
+
+.skill span {
+	padding: 2px 5px;
+	margin: 5px;
+	margin-top: 10px;
+	border-radius: 2px;
+	display: inline-block;
+	
+	
+	
+}
+.ProjectGallery {
 	width: 918px;
 	margin: 0 auto;
 }
 
-.VideoGalleryThreeElements {
+.ProjectGalleryThreeElements {
 	height: 234px;
 }
 
-.VideoGallerySixElements {
+.ProjectGallerySixElements {
 	height: 468px;
 }
 
-.VideoGallery div {
+.ProjectGallery div {
 	display: block;
 	float: left;
 	margin: 9px;
+	padding: 20px;
 	width: 288px;
 	height: 216px;
 	background: rgb(209, 209, 103);
-	text-align: center;
-	font-size: 1.7em;
+	text-align: right;
+	font-size: 1.4em;
 	font-weight: bold;
 	color: blue;
+	position: relative;
+}
+
+.projectName span {
+	position: absolute;
+	padding: 2px 5px;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 13px;
+	top: 0;
+	left: 0;
+	border-radius: 2px;
 }
 
 .ClientReferenceTextArea {

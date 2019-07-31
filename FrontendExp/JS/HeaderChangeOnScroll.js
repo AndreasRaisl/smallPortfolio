@@ -62,6 +62,19 @@ function closePhoneNumber() {
 	//phoneNumberAreaCloseButton.style.display = "block";
 }
 
+function showEmailForm() {
+	emailFormArea.style.display = "block";
+}
+
+function closeEmailForm() {
+	emailFormArea.style.display = "none";
+}
+
+function sayHello() {
+	console.log("Hallo");
+}
+
+
 
 
 
