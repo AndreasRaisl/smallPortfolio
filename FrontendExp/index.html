@@ -47,11 +47,19 @@
 					</a>
 				</li>	
 				<li>					
-					<span class="fa-stack fa-lg" id="emailFormButton" onclick="showEmailForm()">
+					<span class="fa-stack fa-lg emailButton" id="emailFormButton" onclick="showEmailForm()">
 						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 						<i class="fas fa-at fa-stack-1x" style="color: #550355"></i>
 					</span>					
-				</li>			
+				</li>
+				<li>
+					<a href="https://github.com/AndreasRaisl/smallPortfolio" target="_blank">					
+						<span class="fa-stack fa-lg" id="emailFormButton" onclick="sayHello()">
+							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
+							<i class="fab fa-github fa-stack-1x" style="color: #550355"></i>
+						</span>
+					</a>					
+				</li>						
 			</ul>
 		</div>
 		
@@ -74,6 +82,11 @@
 				<div> </div>
 				<div> </div>
 			</div>
+			<div id="innerEmailFormArea">
+				<p class="firstLineEmailInfo"> Schreiben Sie mir per Email </p>
+				<p> Andreas.Raisl@gmx.de </p>
+				<p> Andreasraisl@googlemail.com </p>
+			</div>
 		</div>
 	
 	
@@ -92,14 +105,15 @@
 			<div> </div>
 	  </div>	
 	  <div id="MenuOpen" class="MenuOpen_start">	
-        <div class="MenuText">
-		  <p class="MenuItem MenuItemFirst"> <a href="nowhere.html"> Startseite </a> </p>
-		  <p class="MenuItem"> <a href="Mondholz.html">Wissen </a> </p>
-		  <p class="MenuItem"> <a href="nowhere.html"> Hausbau </a> </p>
-		  <p class="MenuItem"> <a href="nowhere.html"> Videos </a> </p>
-		  <p class="MenuItem"> <a href="nowhere.html"> Hausbau </a> </p>
-		  <p class="MenuItem"> <a href="nowhere.html"> Referenzen </a> </p>
-		  <p class="MenuItem MenuItemLast"> <a href="nowhere.html"> Kontakt </a> </p>		
+      <div class="MenuText">
+				 <p class="MenuItem MenuItemFirst">  <a href="index.html"> Startseite </a> </p> 
+				
+				<p class="MenuItem"> <a href="#"> Mein CV </a> </p>
+				<p class="MenuItem"> <a href="#"> über Reisen nach Moldawien </a> </p>
+				<p class="MenuItem"> <a href="#"> Musikvideos </a> </p>
+				<p class="MenuItem"> <a href="#"> weitere Projekte </a> </p>
+				<p class="MenuItem"> <a href="#"> Programme zur Investmentberechnung </a> </p>
+				<p class="MenuItem MenuItemLast"> <a href="#"> Kontakt </a> </p>		
 	    </div>	
 	  </div>
 	</div>
@@ -111,10 +125,11 @@
 		  <div class="textInIntro">  
 	        <h2> Andreas Raisl – <br/> angehender Webentwickler </h2>
 		    <br>
-	        <p>Kommend aus der Softwareentwicklung für Embedded Systems, habe ich nun den Weg in Richtung Webentwicklung eingeschlagen, denn dies liegt mir
-						 und gefällt mir. Sehr intensiv habe ich mich im Selbststudium mit all den grundlegenden Technologien beschäftigt und habe inzwischen durchaus
-						 ein sehr gutes Verständnis der Grundlagen, das ich ständig ausbaue. Mit diesem Online-Auftritt möchte ich jedem den es interessiert einen ehrlichen 
-						 Eindruck darüber geben wo ich gerade stehe, was ich schon gut kann und was an Lernen und Üben noch vor mir liegt.  </p>
+	        <p>Kommend aus der Softwareentwicklung für Embedded Systems, habe ich nun den Weg in Richtung Webentwicklung eingeschlagen, 
+						denn dies liegt mir und gefällt mir. Sehr intensiv habe ich mich im Selbststudium mit all den grundlegenden Technologien 
+						beschäftigt und habe inzwischen durchaus ein sehr gutes Verständnis der Grundlagen, das ich ständig ausbaue. Mit diesem
+						 Online-Auftritt möchte ich jedem den es interessiert einen ehrlichen Eindruck darüber geben wo ich gerade stehe, 
+						 was ich schon gut kann und was an Lernen und Üben noch vor mir liegt. Denn ich liebe es Neues zu lernen.  </p>
 		    <br>
 			<p class="buttonReferences"> <a href="../aboutMe/moreAboutMe.html">  Mehr über mich </a> </p>	     	    
 	      </div>	
@@ -135,19 +150,27 @@
 		  mehr ist in Arbeit		
 	    </h2>			
 			
-			<div class="mySkills" style="text-align: left;">
-				<ul>
-					<li> HTML5 </li>
-					<li> CSS3 </li>
-					<li> JavaScript (ES6, TypeScript) </li>
-					<li> PHP </li>
-					<li> Python </li>
-					<li> Responsive Design </li>
-					<li> Bootstrap </li>
-					<li> Node.js </li>
-					<li> Version Control (GIT) </li>
-				</ul>
+			<div class="mySkills" style="text-align: left; float: left;">
+				<div class="skill">
+			
+					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+					<span style="background: rgb(55, 154, 214);"> CSS3 </span>
+					<span  style="background: rgb(206, 161, 26);">  JavaScript   </span>
+					 <span  style="background: purple;"> PHP </span>
+					 <span  style="background: green">Python </span> 
+				 <span  style="background: orange"> Responsive Design </span>
+					 <span  style="background: rgb(95, 63, 136);"> Bootstrap  </span> <br>
+					 <span style="background: rgb(118, 172, 100);"> Node.js </span>
+					 <span style="background: pink"> Version Control (GIT) </span>
+
+				</div>				
 			</div>
+
+			<div class="passbild" style="text-align: right;  float: right; border-radius: 50%;">
+				<img style="border-radius: 50%;" src="../img/myPictureCutted.jpg" alt="mein Passbild" width="200px" height="200px">
+
+			</div>
+			<div style="clear: both;"></div>
 		</div>
 		
 		<h1 id="headingProjects"> Meine Projekte </h1>
@@ -161,13 +184,21 @@
 			<img class="secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
 		</div>	 -->
 		
-		<div class="VideoGallery VideoGallerySixElements">
-			<div class="notOuterRightImage"> Login-Formular <br> (PHP) </div>
-			<div class="notOuterRightImage"> Informationsseite zum Thema Eisenbahn <br> (HTML, CSS, JavaScript) </div>
-			<div> Projekt 3</div>
-			<div class="notOuterRightImage secondRow"> Projekt 4 </div>
-			<div class="notOuterRightImage secondRow"> Projekt 5 </div>
-			<div class="secondRow"> Projekt 6 </div>
+		<div class="ProjectGallery ProjectGallerySixElements">
+			<div class="notOuterRightImage projectName">
+					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+					<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
+					<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
+					 <span  style="background: purple; top: 75px;"> PHP </span>
+					 <span  style="background: orange; top: 100px;"> Responsive Design </span>
+					  
+					 Login-Formular 
+			</div>
+			<div class="notOuterRightImage projectName"> Informationsseite zum Thema Eisenbahn </div>
+			<div class="projectName"> Wochentag der Geburt berechnen </div>
+			<div class="notOuterRightImage secondRow projectName"> Projekt 4 </div>
+			<div class="notOuterRightImage secondRow projectName"> Projekt 5 </div>
+			<div class="secondRow projectName"> Projekt 6 </div>
 		</div>		
 		
 	  <div class="ClientReferenceTextArea">
@@ -205,11 +236,11 @@
 			<br>			
 			<p>
 				Zum Abschluss dieser Startseite hier noch einige persönliche Bilder von mir und dem was ich so mache. 
-				Keine Sorge, diese haben jetzt mit dem Programmieren gar nichts zu tun. 
+				Und zur Abwechslung haben diese mal mit dem Programmieren gar nichts zu tun. 
 			</p>
 	  </div>	
 	
-	<div class="VideoGallery VideoGallerySixElements">
+	<div class="ProjectGallery ProjectGallerySixElements">
 		<img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px"><img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px"><img src="images/teaser_video.jpg" width="288px" height="216px">
 		<img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px"><img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px"><img class="secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
 	</div>
