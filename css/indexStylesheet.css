@@ -128,6 +128,7 @@ h2 {
 	top: 64px;
 	z-index: 1;
 	display: none;
+	cursor: pointer;
 }
 
 .MenuCloseButton >div {
@@ -227,6 +228,7 @@ h2 {
 	top: 0;
 	z-index: 1;
 	opacity: 0.3;
+	cursor: pointer;
 }
 
 .phoneNumberAreaCloseButton:hover {
@@ -280,10 +282,12 @@ h2 {
 	top: 0;
 	z-index: 1;
 	opacity: 0.3;
+	cursor: pointer;
 }
 
 .emailFormAreaCloseButton:hover {
 	opacity: 1;
+	
 }
 
 .emailFormAreaCloseButton:before, .emailFormAreaCloseButton:after {
