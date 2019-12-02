@@ -416,7 +416,7 @@ h2 {
 	transform: translateY(-50%);
 	top: 50%;
 	left: 10.4%;
-	width: 79%;
+	width: 80%;
 }
 
 .buttonReferences {	
@@ -535,12 +535,18 @@ h2 {
 	padding: 20px;
 	width: 288px;
 	height: 216px;
-	background: rgb(209, 209, 103);
+	background: rgb(209, 209, 103); 	
 	text-align: right;
 	font-size: 1.4em;
 	font-weight: bold;
 	color: blue;
 	position: relative;
+}
+
+.ProjectGallery div.projectName2 {
+	background-image: url(../images/backgroundRailwaysite.png);
+	background-size: cover;	
+	color: black;
 }
 
 .projectName span {
@@ -657,6 +663,24 @@ h2 {
 .MondholzText p {
 	font-size: 19px;
 	color: white;
+}
+
+.rotate180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.rotate90 {
+	-webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	width: 288px;
+	height: 216px;
 }
 
 

@@ -1,2 +1,0 @@
-Andy;Andreas;Raisl;andreas.raisl@gmx.de;90eb08b94b27a03c38f78ac2fe96ecddaad63435;dummyString
-Halja;Halyna;Oliyarnyk;halyna.raisl@gmx.de;3f547476e0ce8e681ded188f0322a4d5e0d56ec4;dummyString

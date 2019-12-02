@@ -7,19 +7,19 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"> 
 </head>
 
+
 <body id="myBody">
 	
+	<!-- Sliding Header mit Logo, Kontaktbuttopns und Menübutton-->
 	<div id="header" class="header_start">	  	
 		<img class = "logo_start" id="logo" src="img/Logo_neu.png" width="130px" height="45px">
 		
 	  <!-- <div class="ButtonGroup">
-
 			<div class="iconCircle">	
 	    <a class="ButtonCall" href="nowhere.html">
 				<i class="fa fa-phone fa-fw" style="font-size:0.5em;"></i>
 			</a>
 			</div>
-
 			<div class="iconCircle">	
 	    <a class="ButtonHome" href="index.html">
 		  <i class="fa fa-home fa-fw"></i>
@@ -32,28 +32,28 @@
 
 		<div class="ButtonGroup">	 
 			<ul>
-				<li>					
-					<span class="fa-stack fa-lg phoneButton"  id="phoneButton" onclick="showPhoneNumber()">
+				<li>	<!-- Phone Button -->				
+					<span class="fa-stack fa-lg phoneButton" onclick="showPhoneNumber()">
 						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 						<i class="fas fa-phone fa-stack-1x" style="color: #550355"></i>
 					</span>					
 				</li>
 				<li>
-					<a href="index.html">
+					<a href="index.html"> <!-- Home Button -->
 						<span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 							<i class="fas fa-home fa-stack-1x" style="color: #550355"></i>
 						</span>
 					</a>
 				</li>	
-				<li>					
-					<span class="fa-stack fa-lg emailButton" id="emailFormButton" onclick="showEmailForm()">
+				<li>	<!--  Email Button 		-->		
+					<span class="fa-stack fa-lg emailButton" onclick="showEmailForm()">
 						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 						<i class="fas fa-at fa-stack-1x" style="color: #550355"></i>
 					</span>					
 				</li>
 				<li>
-					<a href="https://github.com/AndreasRaisl/smallPortfolio" target="_blank">					
+					<a href="https://github.com/AndreasRaisl/smallPortfolio" target="_blank">	<!-- Github Button -->				
 						<span class="fa-stack fa-lg" id="emailFormButton" onclick="sayHello()">
 							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 							<i class="fab fa-github fa-stack-1x" style="color: #550355"></i>
@@ -61,44 +61,43 @@
 					</a>					
 				</li>						
 			</ul>
-		</div>
+		</div>  <!-- End Button Group -->
 		
-		
+		<!-- Ausklappmenü Telefonnummern -->
 		<div class="phoneNumberArea" id="phoneNumberArea">
 			<div id="phoneNumberAreaCloseButton" class="phoneNumberAreaCloseButton" onclick="closePhoneNumber()">
-				<div> </div>
-				<div> </div>
+				<!-- <div> </div>
+				<div> </div> -->
 			</div>
 			<div id="innerPhoneNumberArea">
-				<p class="firstLinePhoneInfo">Sie erreichen mich telefonisch</p>
+				<p class="firstLinePhoneInfo">Telefonisch bin ich erreichbar:</p>
 				<p> Mobil: +49(0)151-50904441 </p>
 				<p> Festnetz: +49(0)228-36027685 </p>
 			</div>
 		</div>			
 			
-
+    <!-- Ausklappmenü Emailkontakt -->
 		<div class="emailFormArea" id="emailFormArea">
 			<div id="emailFormAreaCloseButton" class="emailFormAreaCloseButton" onclick="closeEmailForm()">
-				<div> </div>
-				<div> </div>
+				<!-- <div> </div>
+				<div> </div> -->
 			</div>
 			<div id="innerEmailFormArea">
-				<p class="firstLineEmailInfo"> Schreiben Sie mir per Email </p>
+				<p class="firstLineEmailInfo"> Auch per Email erreichbar: </p>
 				<p> Andreas.Raisl@gmx.de </p>
 				<p> Andreasraisl@googlemail.com </p>
 			</div>
-		</div>
-	
-	
+		</div>		
 
 	  <div class="MenuButton" onclick="openMenu()">
-		<div id="MenuButtonLine1" class="MenuButtonLine MenuButtonLine1"> </div>
+			<div id="MenuButtonLine1" class="MenuButtonLine MenuButtonLine1"> </div>
 	    <div id="MenuButtonLine2" class="MenuButtonLine MenuButtonLine2"> </div>
 	    <div id="MenuButtonLine3" class="MenuButtonLine MenuButtonLine3"> </div>	
-	  </div>	
-	</div>
+		</div>
+			
+	</div>  <!-- End Header -->
 	
-		
+	<!-- Ausklappmenü -->	
 	<div id="MenuArea" class="MenuArea">
 	  <div id="MenuCloseButton" class="MenuCloseButton" onclick="closeMenu()">
 			<div> </div>
@@ -115,17 +114,18 @@
 				<p class="MenuItem MenuItemLast"> <a href="#"> Kontakt </a> </p>		
 	    </div>	
 	  </div>
-	</div>
+	</div>  
 	
 	
 	
 	<div id="content1" class="background1">		
 	    <div class="intro">
 		  <div class="textInIntro">  
-	        <h2> Andreas Raisl – <br/> angehender Webentwickler </h2>
+	        <h2> Andreas Raisl – <br/> angehender Webentwickler - <br/> Hallo </h2>
 		    <br>
-	        <p>Kommend aus der Softwareentwicklung für Embedded Systems, habe ich nun den Weg in Richtung Webentwicklung eingeschlagen, 
-						denn dies liegt mir und gefällt mir. Sehr intensiv habe ich mich im Selbststudium mit all den grundlegenden Technologien 
+	        <p>So habe ich also nun den Weg der Webentwicklung eingeschlagen. Vorher hatte ich mit deutlich hardwarenäherer 
+						Softwareentwicklung im Bereich Embedded Systems zu tun. Aber Webentwicklung gefällt mir und liegt mir. </p> <br> <p> 
+						Sehr intensiv habe ich mich im Selbststudium mit all den grundlegenden Technologien 
 						beschäftigt und habe inzwischen durchaus ein sehr gutes Verständnis der Grundlagen, das ich ständig ausbaue. Mit diesem
 						 Online-Auftritt möchte ich jedem den es interessiert einen ehrlichen Eindruck darüber geben wo ich gerade stehe, 
 						 was ich schon gut kann und was an Lernen und Üben noch vor mir liegt. Denn ich liebe es Neues zu lernen.  </p>
@@ -184,20 +184,37 @@
 		
 		<div class="ProjectGallery ProjectGallerySixElements">
 			<a href="https://dry-ridge-52931.herokuapp.com/">
-			<div class="notOuterRightImage projectName">
+				<div class="notOuterRightImage projectName">
 					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
 					<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
 					<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
-					 <span  style="background: purple; top: 75px;"> PHP </span>
-					 <span  style="background: orange; top: 100px;"> Responsive Design </span>
-					  
-					 Login-Formular 
-			</div>
+					<span  style="background: purple; top: 75px;"> PHP </span>
+					<span  style="background: orange; top: 100px;"> Responsive Design </span>					  
+					Login-Formular 
+				</div>
 			</a>
+
+
 			<a href="Eisenbahn/HTMLVersion/Railways.html">
-			<div class="notOuterRightImage projectName"> Informationsseite zum Thema Eisenbahn </div>
+				<div class="notOuterRightImage projectName projectName2">
+					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+					<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
+					<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
+					Informationsseite <br> zum Thema <br> Eisenbahn 
+				</div>
 			</a>
-			<div class="projectName"> Wochentag der Geburt berechnen </div>
+
+			<a href="https://fierce-island-98666.herokuapp.com/">
+				<div class="projectName">
+					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+					<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
+					<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
+					<span  style="background: purple; top: 75px;"> PHP </span>
+					<span  style="background: orange; top: 100px;"> Responsive Design </span>		
+					Wochentag der <br> Geburt berechnen
+				</div>
+			</a>
+
 			<div class="notOuterRightImage secondRow projectName"> Projekt 4 </div>
 			<div class="notOuterRightImage secondRow projectName"> Projekt 5 </div>
 			<div class="secondRow projectName"> Projekt 6 </div>
@@ -243,8 +260,12 @@
 	  </div>	
 	
 	<div class="ProjectGallery ProjectGallerySixElements">
-		<img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px"><img class="notOuterRightImage" src="images/teaser_video.jpg" width="288px" height="216px"><img src="images/teaser_video.jpg" width="288px" height="216px">
-		<img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px"><img class="notOuterRightImage secondRow" src="images/teaser_video.jpg" width="288px" height="216px"><img class="secondRow" src="images/teaser_video.jpg" width="288px" height="216px">
+		<img src="images/AussichtVinschgau.jpg" class="notOuterRightImage rotate180"  width="288px" height="216px">
+		<img src="images/mitDanielsGoldmedaille2.jpg"class="notOuterRightImage rotate180"  width="288px" height="216px">
+		<img src="images/anDerFeuerstelle.jpg" class="rotate180" width="288px" height="216px">
+		<img src="images/aufWieseSchweiz.jpg" class="notOuterRightImage secondRow rotate180"  width="288px" height="216px">
+		<img src="images/PicknickSisteron.jpg"class="notOuterRightImage secondRow rotate180"  width="288px" height="216px">
+		<img src="images/amFlussSisteron.jpg" class="secondRow rotate180" width="288px" height="216px">
 	</div>
 	
 	<div class="footer">
@@ -253,6 +274,8 @@
 		<p class="impressum"><a href="nowhere.html"> Impressum </a> | <a href="nowhere.html"> Datenschutz </a></p>	
 	</div>
 	</div>
+
+	<div class="theEnd"></div>
 	
 	
 	
