@@ -37,17 +37,19 @@
 						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 						<i class="fas fa-phone fa-stack-1x" style="color: #550355"></i>
 					</span>					
-				</li>
-				<!-- <li>
+				</li><!-- 
+
+				 <li>
 					<a href="index.html">  Home Button  -->
 						<!-- <span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 							<i class="fas fa-home fa-stack-1x" style="color: #550355"></i>
 						</span>
-					</a> -->
-				<!-- </li>	 --> -->
-				<li>	<!--  Email Button 		-->		
-					<span class="fa-stack fa-lg emailButton" onclick="showEmailForm()">
+					</a>
+				 </li>
+
+				--><li>	<!--  Email Button 		-->		
+				<span class="fa-stack fa-lg emailButton" onclick="showEmailForm()">
 						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
 						<i class="fas fa-at fa-stack-1x" style="color: #550355"></i>
 					</span>					
@@ -107,7 +109,7 @@
       <div class="MenuText">
 				<p class="MenuItem MenuItemFirst">  <a href="index.html"> Startseite </a> </p> 				
 				<p class="MenuItem"> <a href="aboutMe/Lebenslauf_Mai2018_update.pdf"> Mein CV </a> </p>
-				<p class="MenuItem"> <a href="https://www.traveltolife.de/Moldawien/erlebnisreisen/moldawien-reise/MD-1"> über Reisen nach Moldawien </a> </p>
+				<p class="MenuItem"> <a href="https://www.traveltolife.de/Moldawien/erlebnisreisen/moldawien-reise/MD-1" target="_blank"> über Reisen nach Moldawien </a> </p>
 				<p class="MenuItem"> <a href="#"> Musikvideos </a> </p>
 				<p class="MenuItem"> <a href="#"> weitere Projekte </a> </p>
 				<p class="MenuItem"> <a href="#"> Programme zur Investmentberechnung </a> </p>
@@ -118,7 +120,11 @@
 	
 	
 	
-	<div id="content1" class="background1">		
+	<div id="content1" class="background1">	
+			<div class="passbild1" style="float: left; border-radius: 50%;">
+					<img style="border-radius: 50%;" src="img/myPictureCutted.jpg" alt="mein Passbild" width="200px" height="200px">
+				</div>
+				<div style="clear: both;"></div>		
 	    <div class="intro">
 		  <div class="textInIntro">  
 	        <h2> Andreas Raisl – <br/> angehender Webentwickler - <br/> Hallo </h2>
@@ -166,9 +172,8 @@
 
 			<div class="passbild" style="text-align: right;  float: right; border-radius: 50%;">
 				<img style="border-radius: 50%;" src="img/myPictureCutted.jpg" alt="mein Passbild" width="200px" height="200px">
-
 			</div>
-			<div style="clear: both;"></div>
+			<div style="clear: both;"></div>	
 		</div>
 		
 		<h1 id="headingProjects"> Meine Projekte </h1>
@@ -192,17 +197,17 @@
 				<span  style="background: orange; top: 100px;"> Responsive Design </span>					  
 				Login-Formular
 				<a href="https://dry-ridge-52931.herokuapp.com/">	<div class="toDemoButton"> Demo </div> </a>
-				<a href="#"> <div class="toCodeButton"> Zum Code </div> </a>					
+				<a href="https://github.com/AndreasRaisl/SignupAndLoginForm"> <div class="toCodeButton"> Zum Code </div> </a>					
 			</div>
-
-			<a href="Eisenbahn/HTMLVersion/Railways.html">
-				<div class="notOuterRightImage projectName projectName2">
-					<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
-					<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
-					<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
-					Informationsseite <br> zum Thema <br> Eisenbahn 
-				</div>
-			</a>
+			
+			<div class="notOuterRightImage projectName projectName2">
+				<span  style="background: rgb(202, 43, 3);">  HTML5  </span>
+				<span style="background: rgb(55, 154, 214); top: 25px"> CSS3 </span>
+				<span  style="background: rgb(206, 161, 26); top: 50px;">  JavaScript   </span>
+				Informationsseite <br> zum Thema <br> Eisenbahn 
+				<a href="Eisenbahn/HTMLVersion/Railways.html"> <div class="toDemoButton"> Demo </div> </a>					
+				<a href="https://github.com/AndreasRaisl/Eisenbahnseite"> <div class="toCodeButton"> Zum Code </div> </a>		
+			</div>			
 
 			<a href="https://fierce-island-98666.herokuapp.com/">
 				<div class="projectName projectName3">

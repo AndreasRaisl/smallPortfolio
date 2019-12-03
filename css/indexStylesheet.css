@@ -151,7 +151,7 @@ h2 {
 
 .logo_start {
 	position: absolute; 
-	left: 40px;
+	left: 50px;
 	top: 50%;
 	transform: translateY(-50%);
 	background-color: white;
@@ -165,13 +165,19 @@ h2 {
 
 .logo_later {
 	position: absolute;
-	left: 40px;
+	left: 50px;
 	top: 50%;
 	transform: translateY(-50%);
 	background-color: white;
 	width: 130px;
 	height: 45px;
 	padding: 0px;	
+}
+
+.passbild1 {
+	position: relative;
+	top: 150px;
+	left: 40px;
 }
 
 .ButtonGroup {
@@ -571,9 +577,10 @@ h2 {
 	width: 140px;
 	float: right;
 	text-align: center;
-	padding: 8px;
-	position: relative;
-	top: 70px;
+	padding: 5px;
+	position: absolute;
+	top: 170px;
+	left: 130px;
 }
 
 .toDemoButton {
@@ -582,9 +589,10 @@ h2 {
 	width: 140px;
 	float: right;
 	text-align: center;
-	padding: 8px;
-	position: relative;
-	top: 40px;
+	padding: 5px;
+	position: absolute;
+	top: 120px;
+	left: 130px;
 
 }
 
