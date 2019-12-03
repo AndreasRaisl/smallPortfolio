@@ -1,33 +1,16 @@
 <?php
   setlocale(LC_ALL,"deu_deu");
   date_default_timezone_set("Europe/Berlin");
-  
-  $germanDaynames = array("Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag");
-
-  function validateDate($day, $month, $year) {
-    if($day > 0 and $day <= 31 and $month > 0 and $month <= 12 and $year >= 1970 and $year <= 2020) return true;
-    else return false;
-  }
-
-  //$dayToday=strftime("%A");
-  $dayTodayNumber = date("w");
-  $dayTodayGerman = $germanDaynames[$dayTodayNumber];
-  $timestampInOneYear = strtotime('+1year');
-  //$dayNextYear = strftime("%A",$timestamp_in_one_year);
-  $dayNextYearNumber = date("w", $timestampInOneYear);
-  $dayNextYearGerman = $germanDaynames[$dayNextYearNumber];
+  $dayToday=strftime("%A");
+  $timestamp_in_one_year=strtotime('+1year');
+  $dayNextYear = strftime("%A",$timestamp_in_one_year);
 
   $birthdayDay = $_POST['birthdayDay'];
   $birthdayMonth = $_POST['birthdayMonth'];
   $birthdayYear = $_POST['birthdayYear'];
-  validateDate($birthdayDay, $birthdayMonth, $birthdayYear);
   $birthdayString = "$birthdayDay.$birthdayMonth.$birthdayYear";
   $birthdayTimestamp = strtotime($birthdayString)."<br />";
-  $birthdayWeekdayNumber = date("w", $birthdayTimestamp);
-  $birthdayWeekdayGerman = $germanDaynames[$birthdayWeekdayNumber];
-
-
-  //$birthdayWeekday = strftime("%A", $birthdayTimestamp);    
+  $birthdayWeekday = strftime("%A", $birthdayTimestamp);    
   
   $handle=fopen("besucherzaehler.txt", "r");
   $visitorsBefore=fread($handle, filesize("besucherzaehler.txt"));
@@ -49,13 +32,13 @@
 
     <div class="mainInfoBox">
       <h1> Geburtstag </h1>      
-      <h3> Ihr Geburtstag war an einem <?php echo $birthdayWeekdayGerman; ?> </h3> 
+      <h3> Ihr Geburtstag war an einem <?php echo $birthdayWeekday; ?> </h3> 
     </div> 
     
     <div class="extraInfoBox">
       <h1> Auch interessant </h1>
-      <p> Heute ist <?php echo $dayTodayGerman; ?> </p>     
-      <p> In einem Jahr ist <?php echo $dayNextYearGerman; ?> </p>
+      <p> Heute ist <?php echo $dayToday; ?> </p>     
+      <p> In einem Jahr ist <?php echo $dayNextYear; ?> </p>
       <p> Übrigens, vor Ihnen haben bereits  <?php echo $visitorsBefore; ?> Personen diesen Service genutzt. <br>
           Sie sind der <?php echo $visitorsNow; ?>. Nutzer. Die neue Zahl <?php echo $visitorsNow; ?> wurde gespeichert. </p>
       <p> Die aktuelle Uhrzeit ist jetzt: <?php echo date("H:i"); ?> </p>

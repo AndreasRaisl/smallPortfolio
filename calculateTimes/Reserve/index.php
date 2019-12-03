@@ -3,7 +3,7 @@
 <head>
 	<title> Geburtstag berechnen - Eingabeseite </title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="formBirthdayCalcStyles.css">	
+	<link rel="stylesheet" href="formStyles.css">	
 </head>
 
 <body>
@@ -14,19 +14,20 @@
 		$date = date("d.m.Y", $timestamp);
 		$numberOfWeekday = date("w", $timestamp);
 		$wochentag = $deutscheWochentage[$numberOfWeekday];
-		echo "$wochentag, der wunderbare $date";	
+		echo "$wochentag, der $date";	
 	}
 ?>
 
 <div class='menu-container'>
 	<div class='menu'>
 		<div class='date'> <?php echo showDateGerman(); ?> </div>
-		<!-- <div class="signupandlogin">
+		<div class="signupandlogin">
 			<div class='signup'> <a href="#RegistrationHeader">Sign Up</a></div>
 			<div class='login'> <a href="#LoginHeader">Login</a> </div>
-	  </div> -->
+	  </div>
 	</div>
 </div>
+
 
 
 <div class="registration-container">
