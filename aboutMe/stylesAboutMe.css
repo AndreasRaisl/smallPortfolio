@@ -3,3 +3,8 @@ body {
   width: 75%;
   margin: 0 auto;
 }
+
+.content {
+  padding: 20px;
+  background: rgb(243, 199, 117);
+}

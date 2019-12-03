@@ -528,7 +528,7 @@ h2 {
 	height: 468px;
 }
 
-.ProjectGallery div {
+.projectName {
 	display: block;
 	float: left;
 	margin: 9px;
@@ -543,12 +543,17 @@ h2 {
 	position: relative;
 }
 
-.ProjectGallery div.projectName2 {
+/* .ProjectGallery div.projectName2 {
 	background-image: url(../images/backgroundRailwaysite.png);
 	background-size: cover;	
 	color: black;
 }
 
+.ProjectGallery div.projectName3 {
+	background-image: url(../images/backgroundBirthdaySite.png);
+	background-size: cover;	
+	color: red;
+} */
 .projectName span {
 	position: absolute;
 	padding: 2px 5px;
@@ -558,6 +563,29 @@ h2 {
 	top: 0;
 	left: 0;
 	border-radius: 2px;
+}
+
+.toCodeButton {
+	color: white;
+	background: blue;
+	width: 140px;
+	float: right;
+	text-align: center;
+	padding: 8px;
+	position: relative;
+	top: 70px;
+}
+
+.toDemoButton {
+	color: white;
+	background: blue;
+	width: 140px;
+	float: right;
+	text-align: center;
+	padding: 8px;
+	position: relative;
+	top: 40px;
+
 }
 
 .ClientReferenceTextArea {
