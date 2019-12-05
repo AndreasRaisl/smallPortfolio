@@ -77,3 +77,17 @@ body {
     border-bottom: 0;
   }
 }
+
+#response {
+  display: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  background: orange;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#responseDetails {
+  display: none;
+}

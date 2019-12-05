@@ -25,6 +25,12 @@ h1, h2, h3 {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  border-radius: 10px;  
+}
+
+.innerInfoBox {
+  background: rgb(63, 119, 172);
+  color: black;
+  padding: 15px;
   border-radius: 10px;
-  
 }

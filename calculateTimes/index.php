@@ -14,7 +14,7 @@
 		$date = date("d.m.Y", $timestamp);
 		$numberOfWeekday = date("w", $timestamp);
 		$wochentag = $deutscheWochentage[$numberOfWeekday];
-		echo "$wochentag, der wunderbare $date";	
+		echo "Heute ist $wochentag, der  $date";	
 	}
 ?>
 
@@ -37,7 +37,7 @@
 
 		<br> <br>
 
-		<form action="calculateBirthday.php" method="post" enctype="multipart/form-data" name="birthdayForm" id="birthdayForm">
+		<form action="calculateBirthday.php" method="post" enctype="multipart/form-data" name="birthdayForm">
 		
 		<div class="form-row">
 			<label for="birthdayDay"> Tag </label>

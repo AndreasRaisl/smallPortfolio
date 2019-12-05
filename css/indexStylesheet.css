@@ -524,29 +524,35 @@ h2 {
 .ProjectGallery {
 	width: 918px;
 	margin: 0 auto;
+	height: 702px;
+	background: fuchsia;
 }
 
-.ProjectGalleryThreeElements {
-	height: 234px;
-}
-
-.ProjectGallerySixElements {
+.ProjectGallery2 {
 	height: 468px;
 }
 
+/* .ProjectGalleryThreeElements {
+	height: 234px;
+} */
+
+/* .ProjectGallerySixElements {
+	height: 468px;
+} */
+
 .projectName {
-	display: block;
-	float: left;
-	margin: 9px;
-	padding: 20px;
+	position: relative;
+	display: block;; 
+	float: left; 
 	width: 288px;
 	height: 216px;
-	background: rgb(209, 209, 103); 	
+	margin: 9px;
+	padding: 20px;	
+	background: rgb(209, 209, 103);
+	color: blue; 	
 	text-align: right;
 	font-size: 1.4em;
-	font-weight: bold;
-	color: blue;
-	position: relative;
+	font-weight: bold;	
 }
 
 /* .ProjectGallery div.projectName2 {
@@ -562,38 +568,35 @@ h2 {
 } */
 .projectName span {
 	position: absolute;
+	top: 0;
+	left: 0;
 	padding: 2px 5px;
 	margin-bottom: 5px;
 	color: white;
-	font-size: 13px;
-	top: 0;
-	left: 0;
+	font-size: 13px;	
 	border-radius: 2px;
 }
 
 .toCodeButton {
-	color: white;
-	background: blue;
-	width: 140px;
-	float: right;
-	text-align: center;
-	padding: 5px;
 	position: absolute;
 	top: 170px;
 	left: 130px;
+	width: 140px;
+	color: white;	
+	background: blue;	
+	text-align: center;
+	padding: 5px;	
 }
 
 .toDemoButton {
-	color: white;
-	background: blue;
-	width: 140px;
-	float: right;
-	text-align: center;
-	padding: 5px;
 	position: absolute;
 	top: 120px;
 	left: 130px;
-
+	width: 140px;	
+	padding: 5px;
+	color: white;
+	background: blue;	
+	text-align: center;
 }
 
 .ClientReferenceTextArea {
@@ -609,16 +612,17 @@ h2 {
 
 .ClientReferenceText {
 	position: absolute;
-	transform: translateY(-50%);
 	top: 50%;
-	width: 900px;
-	text-align: center;
-	color: white;
-	font-size: 19px;
-	margin-left: auto;
-	margin-right: auto;
 	left: 0px;
 	right: 0px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background: orange;
+	color: white;	
+	transform: translateY(-50%);	
+	text-align: center;	
+	font-size: 19px;	
 }
 
 .ClientReferenceText h2 {
