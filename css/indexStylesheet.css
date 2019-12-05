@@ -525,8 +525,8 @@ h2 {
 	width: 918px;
 	margin: 0 auto;
 	height: 702px;
-	background: fuchsia;
-}
+	/* background: fuchsia; */
+} 
 
 .ProjectGallery2 {
 	height: 468px;
