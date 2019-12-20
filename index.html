@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andreas Raisl - Portfolio-Startseite </title>	
 	<link rel="stylesheet" href="css/indexStylesheet.css"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"> 
@@ -11,11 +12,45 @@
 
 <body>
 	
-	<!-- Sliding Header mit Logo, Kontaktbuttopns und Menübutton-->
-	<div id="header" class="header_start">	  	
-		<a href="index.html"> <img class="logo_start" id="logo" src="img/Logo_neu.png" width="130px" height="45px"> </a>
-		
-	  <!-- <div class="ButtonGroup">
+	<!-- Sliding Header mit Logo, Kontaktbuttons und Menübutton-->
+	<div id="header" class="header_start">
+
+		<a href="index.html"> <img class="logo_start" id="logo" src="img/Logo_neu.png"> </a> <!-- Logo -->	  
+
+		<div class="ButtonGroup">	 
+			<ul>
+				<li>	<!-- Phone Button -->				
+					<span class="fa-stack fa-lg phoneButton" onclick="showPhoneNumber()">
+						<i class="fa fa-circle fa-stack-2x" style="color: rgb(209, 209, 103);"></i>
+						<i class="fas fa-phone fa-stack-1x" style="color: #550355"></i>
+					</span>					
+				</li><!-- 
+				 <li>
+					<a href="index.html">  Home Button     This Home Button now replaced by Logo -->
+						<!-- <span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
+							<i class="fas fa-home fa-stack-1x" style="color: #550355"></i>
+						</span>
+					</a>
+				 </li>
+		--> <li>	<!--  Email Button 		-->		
+					<span class="fa-stack fa-lg emailButton" onclick="showEmailForm()">
+						<i class="fa fa-circle fa-stack-2x" style="color: rgb(209, 209, 103);"></i>
+						<i class="fas fa-at fa-stack-1x" style="color: #550355"></i>
+					</span>					
+				</li>
+				<li>
+					<a href="https://github.com/AndreasRaisl/smallPortfolio" target="_blank">	<!-- Github Button -->				
+						<span class="fa-stack fa-lg" id="emailFormButton" onclick="sayHello()">
+							<i class="fa fa-circle fa-stack-2x" style="color: rgb(209, 209, 103);"></i>
+							<i class="fab fa-github fa-stack-1x" style="color: #550355"></i>
+						</span>
+					</a>					
+				</li>						
+			</ul>
+		</div>  <!-- End Button Group -->
+
+		<!-- <div class="ButtonGroup">  another Version
 			<div class="iconCircle">	
 	    <a class="ButtonCall" href="nowhere.html">
 				<i class="fa fa-phone fa-fw" style="font-size:0.5em;"></i>
@@ -31,44 +66,10 @@
 	    </a>	
 		</div>-->
 
-		<div class="ButtonGroup">	 
-			<ul>
-				<li>	<!-- Phone Button -->				
-					<span class="fa-stack fa-lg phoneButton" onclick="showPhoneNumber()">
-						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
-						<i class="fas fa-phone fa-stack-1x" style="color: #550355"></i>
-					</span>					
-				</li><!-- 
-
-				 <li>
-					<a href="index.html">  Home Button  -->
-						<!-- <span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
-							<i class="fas fa-home fa-stack-1x" style="color: #550355"></i>
-						</span>
-					</a>
-				 </li>
-
-				--><li>	<!--  Email Button 		-->		
-				<span class="fa-stack fa-lg emailButton" onclick="showEmailForm()">
-						<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
-						<i class="fas fa-at fa-stack-1x" style="color: #550355"></i>
-					</span>					
-				</li>
-				<li>
-					<a href="https://github.com/AndreasRaisl/smallPortfolio" target="_blank">	<!-- Github Button -->				
-						<span class="fa-stack fa-lg" id="emailFormButton" onclick="sayHello()">
-							<i class="fa fa-circle fa-stack-2x" style="color: rgb(211, 201, 64);"></i>
-							<i class="fab fa-github fa-stack-1x" style="color: #550355"></i>
-						</span>
-					</a>					
-				</li>						
-			</ul>
-		</div>  <!-- End Button Group -->
 		
 		<!-- Ausklappmenü Telefonnummern -->
 		<div class="phoneNumberArea" id="phoneNumberArea">
-			<div id="phoneNumberAreaCloseButton" class="phoneNumberAreaCloseButton" onclick="closePhoneNumber()">
+			<div class="phoneNumberAreaCloseButton" onclick="closePhoneNumber()">
 				<!-- <div> </div>
 				<div> </div> -->
 			</div>
@@ -151,10 +152,7 @@
 	  </div>	
 	
 	  <div class="textOnPage2">
-	    <h2 class="headingMySkills"> 
-		  Meine Skills -  <br>
-		  mehr ist in Arbeit		
-	    </h2>			
+	    <h2 class="headingMySkills">  Meine Skills bis jetzt </h2>			
 			
 			<div class="mySkills" style="text-align: left; float: left;">
 				<div class="skill">			
@@ -164,20 +162,24 @@
 					<span  style="background: purple;"> PHP </span>
 					<span  style="background: green">Python </span> 
 				 	<span  style="background: orange"> Responsive Design </span>
-					<span  style="background: rgb(95, 63, 136);"> Bootstrap  </span> <br>
+					<span  style="background: rgb(95, 63, 136);"> Bootstrap  </span> 
 					<span style="background: rgb(118, 172, 100);"> Node.js </span>
 					<span style="background: pink"> Version Control (GIT) </span>
 					<span style="background: blue"> Angular </span>
+					<span style="background: rgb(4, 102, 102)"> Express </span>
+					<span style="background: lightcoral"> MySQL </span> 
+					<span style="background: gray"> REST API </span> 
+					<span style="background: lightseagreen"> MongoDB </span> 
 				</div>				
 			</div>
 
-			<div class="passbild" style="float: right; border-radius: 50%;">
+			<!-- <div class="passbild" style="float: right; border-radius: 50%;">
 				<img style="border-radius: 50%;" src="img/myPictureCutted.jpg" alt="mein Passbild" width="200px" height="200px">
-			</div>
+			</div> -->
 			<div style="clear: both;"></div>	
 		</div>
 		
-		<h1 id="headingProjects"> Meine Projekte </h1>
+		<h2 id="headingProjects"> Meine Projekte </h2>
 		
 	  <!-- <div class="VideoGallery VideoGallerySixElements">
 			<div class="notOuterRightImage" style="background: rgb(209, 209, 103)" width="288px" height="216px"> </div>
@@ -295,29 +297,29 @@
 				<h2> Dinge im Internet schaffen - <br>
 					Was mir an der Webentwicklung so gefällt  </h2>
 					<br>			  
-		  	<p>Es ist die Möglichkeit etwas zu erschaffen. Und wenn alles richtig ist - dann funktioniert es sogar. 
-				Die heutigen Techniken der Webentwicklung sind hochprofessionell und wohl für niemanden mehr 
-				vollständig zu überschauen. Und dennoch ist es auch schon mit elemantaren Kenntnissen möglich 
-				Dinge zum Laufen zu bringen.  Sich durchzufragen, recherchieren, ja, manchmal auch Code zu kopieren. 
-				Oder zu experimentieren, um herauszufinden wie etwas genau funktioniert. 
-				Es geht dann erst mal langsamer als beim hocherfahrenen Profi, sieht nicht immer ganz blankpoliert aus.
-				Diesen Anspruch habe ich mit dieser Seite auch gar nicht. Den Ehrgeiz alles perfekt zu machen hebe ich 
-				mir lieber für den Job auf. Wenn es wirklich gefragt ist und einen Nutzen hat. 
-				So ist etwa leider diese Startseite hier noch nicht responsive, einige Unterseiten dagegen schon, da ich mich vor kurzem 
-				erst mit diesem Thema beschäftigt habe. 
-				Aber es ist auf jeder Stufe möglich etwas zu erschaffen. Ein guter Laptop reicht, all die Informationen sind 
-				online verfügbar, oft erstklassig aufbereitet und erklärt. Es gibt unendlich viel zu lernen. 
-				Und zu experimentieren. Es hört nie auf. 
-				Und die Möglichkeiten sind frei und jederzeit verfügbar.Zeit, ja Zeit ist das einzige was der Sache
-				Grenzen setzt.   Deshalb gefällt mir Webentwicklung so gut.   
+		  	<p>Die Möglichkeit etwas zu erschaffen. Und wenn alles richtig ist - dann funktioniert es, andernfalls steckt der Fehler irgendwo. Und kann gefunden werden.  
+				Die heutigen Methoden der Webentwicklung sind hochprofessionell und kaum mehr überschaubar. Ich denke das geht sogar den Profis so. Trotzdem, es ist auch schon mit elemantaren Kenntnissen möglich Dinge zum Laufen zu bringen.  Wo diese an Grenzen stossen, da geht oft noch Einiges mit  durchzufragen, recherchieren, experimentieren, ja, manchmal auch funktionierenden Code kopieren. 
+				
+				Vielleicht dauert es länger als beim sehr erfahrenen Profi, sieht nicht immer ganz blankpoliert aus. So wie diese Seite. Da ginge noch viel mehr, wenn die nötige Zeit investiert wird. Das Gehen der Extra-Meile aber hebe ich mir für den Job auf. Dann wenn es einen echten Nutzen hat. </p>
+				<br>
+				<p>So ist etwa leider diese Startseite hier noch nicht responsive, da ich mich vor kurzem  erst mit diesem Thema beschäftigt habe und erst jetzt Konzeptionsfehler sehe. Aber es ist auf jeder Stufe möglich etwas zu erschaffen und dabei immer weiter zu lernen.  Fast alle Informationen sind  online verfügbar, oft erstklassig aufbereitet und erklärt. Eine Grenze setzt da letztlich nur die eigene Lebenszeit. 
+				 
+			  Mit Kopf, viel Geduld und Anstrengung kann ich, nur mit Laptop bewaffnet, alles erschaffen.  Deshalb gefällt mir Webentwicklung so gut.   
 		  	</p>			  
 	    </div>
 	  </div>
 	
 	  <div class="lastText">
-	    <h2> Arbeit , mein Ziel  </h2> <br>
-	    <p> Selbst lernen und experimentieren ist ja schön, aber nun bin ich an einem Punkt an dem jetzt die Praxis
-				 der passende weitere Lehrer ist. Learning By Doing! Ich lebe in Bonn und möchte in den nächsten 2 Monaten beruflich in die Webentwicklung einsteigen. 
+	    <h2> Die Arbeit, die ich suche  </h2> <br>
+	    <p> Sehr Vieles habe ich in den letzten Monaten eigenständig erfolgreich gelernt und ausprobiert. Meistens hat es mir dabei viel Freude gemacht. Jetzt aber ist der Zeitpunkt für die reale Praxis, denn da wird ganz bestimmt Vieles noch anders laufen als in Online-Tutorials. Ich freue mich auf reale Aufgaben statt auf selbst erfundene. Freue mich darauf statt immer nur selbst zu recherchieren zumindest ab und zu einfach mal freundliche Kollegen fragen zu können. Vieles möchte ich noch lernen. 
+
+			Ebenso möchte ich aber schon sehr bald produktiv arbeiten. Ich suche nach einem zu meiner Art und meinem Kenntnisstand passenden Umfeld wo ich herausgefordert, aber nicht überfordert werde. Konkret heisst das, eine Firma mit überschaubaren Projekten, nicht zu tief spezialisiert, ohne eine riesige bereits bestehende Codebase für deren Einarbeitung Monate vergehen. Ich möchte bereits innerhalb weniger Wochen produktiv sein und passende Teilaufgaben übernehmen 
+			
+			Gerne frage ich Kollegen um Rat, wenn es gerade passt. Ebenso wichtig ist mir aber schon bald in einer Position zu sein auch über mehrere Stunden sinnvoll allein weiterarbeiten zu können,  wenn gerade niemand da ist oder Zeit hat. 
+			
+			Langfristig habe ich vor mich in Richtung Backend zu spezialisieren. Trotzdem schaue ich gern über den Tellerrand und möchte zu einem gewissen Grad mich bald auch Fullstack Entwickler nennen. Gerade am Anfang stört es mich auch nicht wenn der Schwerpunkt zunächst erstmal mehr im Frontend Bereich liegen sollte. Mit meinen Kenntnissen in HTML/CSS/JS sowie Bootstrap und als Framework Angular bin ich da ganz ordentlich aufgestellt. 
+			
+			Ich lebe in Bonn und möchte in den nächsten 2 Monaten beruflich in die Webentwicklung einsteigen. 
 					Am liebsten hier im Raum Bonn / Köln. Oder aber mit konkreter Remote-Perspektive. Für einige Monate Einarbeitung komme ich 
 					gern auch ganz woanders hin. Sprechen wir einfach darüber!			  
 			</p>

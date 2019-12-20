@@ -1,5 +1,4 @@
 
-
 document.getElementById("myForm").addEventListener('submit', saveNewPhoneNumber);
 document.getElementById("mySearchForm").addEventListener('submit', showContact);
 var outputArea = document.getElementById("outputArea");
@@ -7,26 +6,22 @@ var outputArea = document.getElementById("outputArea");
 function printAllContacts(contacts)
 {
 	if(contacts) {
-	outputArea.innerHTML = "";
-
-contacts.sort(compareContacts);
-
-
-	for(var i=0; i<contacts.length; i++)
-	{
-
-		outputArea.innerHTML += "<div class='well'>"    
-												 +  "<h3>" + contacts[i].contactName + "<h3>"
-												 +  "<h3>" + contacts[i].phoneNumber + "<h3>"
-		                     +  "<button class='btn btn-default'> Anrufen </button>"
-		                     +  "<button onclick='deleteContact(\"" + contacts[i].contactName + "\")' class='btn btn-danger'> Löschen </button>"
-		                     +  "</div>";
-	}
+		outputArea.innerHTML = "";
+		contacts.sort(compareContacts);
+		for(var i=0; i<contacts.length; i++)
+		{
+			actualContact = contacts[i];
+			outputArea.innerHTML += `<div class='well'>   
+															<h3> ${contacts[i].contactName} <h3>
+															<h3> ${contacts[i].phoneNumber} <h3>
+															<button onclick='showCallMessage("${actualContact.contactName}", "${actualContact.phoneNumber}")' class='btn btn-primary callButton'> Anrufen </button>
+															<button onclick='deleteContact("${contacts[i].contactName}")' class='btn btn-danger'> Löschen </button>
+															</div>`;
+		}
 	}
 	else outputArea.innerHTML = "<h3> No saved contacts </h3>";
 	document.getElementById('outputArea').scrollIntoView();
 }
-
 
 function deleteContact(name)
 {
@@ -40,12 +35,9 @@ function deleteContact(name)
 		}
 	}
 	localStorage.setItem('contacts', JSON.stringify(contacts));
-
 	//printAllContacts(contacts);	
 	outputArea.innerHTML = "";
 }
-
-
 
 function getSavedNumbers()
 {
@@ -73,12 +65,9 @@ function validateInput(name, phoneNumber)
 	return true;
 }
 
-
-
-
 function saveNewPhoneNumber(e)
 {
-	console.log("It works");
+	console.log("in saveNewPhoneNumber");
 	let name = document.getElementById('contactName').value;
 	let phoneNumber = document.getElementById('phoneNumber').value;
 
@@ -129,12 +118,13 @@ function showContact(e) {
 	for(var i=0; i<contacts.length; i++)
 	{
 		if(contacts[i].contactName === name) {
-			outputArea.innerHTML += "<div class='well'>"    
-												 	 +  "<h3>" + contacts[i].contactName + "<h3>"
-												   +  "<h3>" + contacts[i].phoneNumber + "<h3>"
-		                       +  "<button class='btn btn-default'> Anrufen </button>"
-		                       +  "<button onclick='deleteContact(\"" + contacts[i].contactName + "\")' class='btn btn-danger'> Löschen </button>"
-													 +  "</div>";
+			actualContact = contacts[i];
+			outputArea.innerHTML = `<div class='well'>   
+															<h3> ${contacts[i].contactName} <h3>
+															<h3> ${contacts[i].phoneNumber} <h3>
+															<button onclick='showCallMessage("${actualContact.contactName}", "${actualContact.phoneNumber}")' class='btn btn-primary callButton'> Anrufen </button>
+															<button onclick='deleteContact("${contacts[i].contactName}")' class='btn btn-danger'> Löschen </button>
+															</div>`;
 			found = true;
 		}
 	}
@@ -144,15 +134,35 @@ function showContact(e) {
 }
 
 function showNewContact(contact) {
+	console.log("showNewContact is called");
 	outputArea.innerHTML = "";
-
-				outputArea.innerHTML += "<div class='well'>"    
-												 	 +  "<h3>" + contact.contactName + "<h3>"
-												   +  "<h3>" + contact.phoneNumber + "<h3>"
-		                       +  "<button class='btn btn-default'> Anrufen </button>"
-		                       +  "<button onclick='deleteContact(\"" + contact.contactName + "\")' class='btn btn-danger'> Löschen </button>"
-		                       +  "</div>";
+	outputArea.innerHTML += `<div class='well'>   
+													<h3> ${contact.contactName} <h3>
+													<h3> ${contact.phoneNumber} <h3>
+													<button onclick='showCallMessage("${contact.contactName}", "${contact.phoneNumber}")' class='btn btn-primary callButton'> Anrufen </button>
+													<button onclick='deleteContact("${contact.contactName}")' class='btn btn-danger'> Löschen </button>
+													</div>`;
 }
+
+function showCallMessage(name, number) {
+	console.log("showCallMessage is called");
+	console.log(name, number);
+	let contact = {contactName: name, phoneNumber: number};
+	console.log(contact);
+	outputArea.innerHTML = "";
+	outputArea.innerHTML += `<div class='well'>
+											     <h3> Hier wird es irgendwann in der Zukunft möglich sein direkt einen Anruf, z.B über Skype oder WhatsApp, zu
+											     initiieren </h3>
+											     <button onclick='goBackToContact("${name}", "${number}")' class='btn btn-primary callButton'> Zurück zum Kontakt </button>
+													 </div>`;
+}
+
+function goBackToContact (name, number) {
+	let contact = {contactName: name, phoneNumber: number};
+	showNewContact(contact);
+}
+
+
 	
 
 

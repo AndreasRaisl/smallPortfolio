@@ -1,0 +1,73 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: red;
+  height: 120px;
+  width: 100%;
+  /* position: fixed; */
+  /* z-index: 1; */
+	transition: height 0.3s linear 0s, padding 0.3s linear 0s;	
+}
+
+.logo_start {
+  background: white;
+  width: 160px;
+  height: 70px;
+  padding: 12.5px 15px;  
+}
+
+.ButtonGroup {
+  background: aqua;
+  position: absolute;	
+	left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ButtonGroup ul li {
+	display: inline;
+}
+
+.contactButton {
+  cursor: pointer;
+}
+
+.MenuButton {
+	/* position: absolute;
+	right: 40px;
+	transform: translateY(-50%);
+	top: 50%;
+	display: flex;
+	height: 18.5px;
+	width: 31px;
+  cursor: pointer; */
+  width: 31px;
+  height: 18px;
+  background: yellow;
+}
+
+.myContainer {
+  background: #550355;
+  color: white;
+  width: 30%;
+  font-size: 19px;
+}
+
+
+
+
+

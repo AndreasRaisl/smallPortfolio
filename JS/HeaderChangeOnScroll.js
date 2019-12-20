@@ -53,13 +53,11 @@ function closeMenu()
 }
 
 function showPhoneNumber() {
-	phoneNumberArea.style.display = "block";
-	//phoneNumberAreaCloseButton.style.display = "block";
+	phoneNumberArea.style.display = "block";	
 }
 
 function closePhoneNumber() {
 	phoneNumberArea.style.display = "none";
-	//phoneNumberAreaCloseButton.style.display = "block";
 }
 
 function showEmailForm() {
