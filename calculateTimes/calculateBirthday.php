@@ -6,8 +6,9 @@
 
   function validateDate($day, $month, $year) {
     if($day == "" or $month == "" or $year == "") {
-      	
+      return false;      	
     }
+    else return true;
   }
   
   //$dayToday=strftime("%A");
@@ -68,7 +69,10 @@
         <p> Übrigens, vor Ihnen haben bereits  <?php echo $visitorsBefore; ?> Personen diesen Service genutzt. <br>
             Sie sind der <?php echo $visitorsNow; ?>. Nutzer. Die neue Zahl <?php echo $visitorsNow; ?> wurde im Besucherzähler 
             gespeichert. </p>
-      </div>       
+      </div> 
+      <div class='form-row'>
+        <button>Tag berechnen</button>
+      </div>      
     </div>
 
   </body>

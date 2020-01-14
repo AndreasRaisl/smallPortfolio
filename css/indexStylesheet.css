@@ -24,13 +24,14 @@ h2 {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	transition: height 0.3s linear 0s, padding 0.3s linear 0s;	
+	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+		
 }
-.header_later {
+.header_later {  /* verkleinerter Header nach dem nach unten scrollen */
 	height: 70px;
-	position: fixed;	
+	position: fixed;
+	z-index: 1;	
 	width: 100%;
-	z-index: 1;
 	transition: height 0.3s linear 0s;
 	border-bottom: 1px solid rgb(120, 120, 120);
 	background-color: white;;
@@ -41,6 +42,7 @@ h2 {
 	left: 50px;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 1;
 	background-color: white;
 	width:160px;
 	height: 70px;	

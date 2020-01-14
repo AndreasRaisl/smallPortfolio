@@ -12,16 +12,17 @@ function printAllContacts(contacts)
 		{
 			actualContact = contacts[i];
 			outputArea.innerHTML += `<div class='well'>   
-															<h3> ${contacts[i].contactName} <h3>
-															<h3> ${contacts[i].phoneNumber} <h3>
+															<h3> ${actualContact.contactName} <h3>
+															<h3> ${actualContact.phoneNumber} <h3>
 															<button onclick='showCallMessage("${actualContact.contactName}", "${actualContact.phoneNumber}")' class='btn btn-primary callButton'> Anrufen </button>
-															<button onclick='deleteContact("${contacts[i].contactName}")' class='btn btn-danger'> Löschen </button>
+															<button onclick='deleteContact("${actualContact.contactName}")' class='btn btn-danger'> Löschen </button>
 															</div>`;
 		}
 	}
 	else outputArea.innerHTML = "<h3> No saved contacts </h3>";
 	document.getElementById('outputArea').scrollIntoView();
 }
+
 
 function deleteContact(name)
 {
